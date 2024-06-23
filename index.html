@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="main.css"> -->
+     <link rel="icon" href="https://www.shutterstock.com/shutterstock/photos/2426863069/display_1500/stock-vector-vector-grape-icon-illustration-of-purple-fruit-with-leaf-isolated-of-white-background-wine-grape-2426863069.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bubble game</title>
+  </head>
+  <body>
+ <div
+      class="h-screen w-[100vw] bg-green-200 flex justify-center items-center "
+    >
+      <div class="h-[80vh] w-[80vw] rounded-xl overflow-hidden">
+        <div
+          class="nav h-[15%] w-full bg-green-700 flex justify-center items-center gap-10 max-sm:gap-3  text-white "
+        >
+          <div class="flex items-center gap-3 max-sm:ml-3">
+            <p>Hit</p>
+            <div
+            class="circle p-5 w-3 h-3 bg-white text-white rounded-lg flex justify-center items-center"
+          >
+            <p id="hit" class="text-black"></p>
+          </div>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <p>Timer</p>
+            <div
+            class="circle p-5 w-3 h-3 bg-white text-white rounded-lg flex justify-center items-center"
+          >
+            <p id="timer" class="text-black">60</p>
+          </div>
+          </div>
+
+          <div class="black flex items-center gap-3 max-sm:mr-3">
+            <p>Score</p>
+            <div
+            class="circle p-5 w-3 h-3 bg-white rounded-lg flex justify-center items-center text-black"
+          >
+            <p id="score" class="text-black">0</p>
+          </div>
+          </div>
+        </div>
+
+
+        <div  class="hero h-[85%] w-full bg-white p-5 flex gap-2 flex-wrap overflow-y-auto">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
